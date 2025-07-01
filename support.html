@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support the Church</title>
+    <link rel="stylesheet" href="navbar.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            background: white;
+            top-padding: 50px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 400px;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .account-details {
+            background: #e8f5e9;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #2e7d32;
+            margin-bottom: 15px;
+        }
+
+        /* Welcome Message */
+        .welcome-box {
+            position: fixed;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #ffcc80;
+            color: #333;
+           
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 90%;
+            max-width: 350px;
+            z-index: 1000;
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .ok-btn {
+            background: #ff7043;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .ok-btn:hover {
+            background: #e64a19;
+        }
+
+        .hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Welcome Message -->
+    <div class="welcome-box" id="welcomeBox">
+        <p>Welcome! Support the church with a token. God bless you!</p>
+        <button class="ok-btn" onclick="closeWelcome()">OK</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        
+         <!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="logo">
+        <img src="icon.png" alt="Logo"> AKP13 HQ
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="form.html"><i class="fas fa-newspaper"></i> News</a></li>
+        <li><a href="teens.html"><i class="fas fa-users"></i> Teens Executives</a></li>
+        <li><a href="support.html"><i class="fas fa-hands-helping"></i> Support Us</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+    </ul>
+    <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+</nav>
+  
+        
+        
+        <h2>Support the Church</h2>
+        <p>Your support helps us grow and serve better. Kindly send your token to:</p>
+        <div class="account-details">
+            9031115927<br>
+            <strong>Moniepoint</strong>
+        </div>
+        <p>God bless you for your generosity.</p>
+    </div>
+
+    <script>
+        // Close welcome message when OK is clicked
+        function closeWelcome() {
+            document.getElementById('welcomeBox').classList.add('hidden');
+        }
+
+        // Automatically close welcome message after 5 seconds
+        setTimeout(() => {
+            closeWelcome();
+        }, 5000);
+    </script>
+<script src="navbar.js"></script>
+</body>
+</html>

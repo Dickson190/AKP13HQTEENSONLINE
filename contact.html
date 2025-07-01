@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us on WhatsApp</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #e8f5e9;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      padding: 40px 30px;
+      text-align: center;
+      max-width: 400px;
+      animation: fadeInUp 1s ease-in-out;
+    }
+    h1 {
+      color: #075e54;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      color: #fff;
+      transition: background 0.3s ease;
+    }
+    .btn-contact {
+      background-color: #25D366;
+    }
+    .btn-contact:hover {
+      background-color: #1ebc59;
+    }
+    .btn-follow {
+      background-color: #075e54;
+    }
+    .btn-follow:hover {
+      background-color: #064b44;
+    }
+    .icon {
+      font-size: 48px;
+      color: #25D366;
+      margin-bottom: 10px;
+      animation: bounce 1.5s infinite;
+    }
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon">
+      <i class="fab fa-whatsapp"></i>
+    </div>
+    <h1>Stay Connected With Us</h1>
+    <p>Contact us directly or follow our WhatsApp Channel for updates, inspiration and more.</p>
+    <a href="https://wa.me/2349154456423" target="_blank">
+      <button class="btn btn-contact">
+        <i class="fab fa-whatsapp"></i> Contact Us on WhatsApp
+      </button>
+    </a>
+    <a href="https://whatsapp.com/channel/0029Vb6NGdWEAKWDNmO1kQ0h" target="_blank">
+      <button class="btn btn-follow">
+        <i class="fas fa-bullhorn"></i> Follow Our Channel
+      </button>
+    </a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP13 HQ JUNIOR CHURCH Uyo Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    
+    <!-- Welcome Alert Box -->
+    <div class="alert-box" id="alertBox">
+        <p>Welcome to <strong>AP13 HQ JUNIOR CHURCH Online</strong>! Click on a section to explore.</p>
+        <button onclick="closeAlert()">OK</button>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <div class="card" onclick="navigateTo('inspiration.html')">
+            <img src="teens-model-un-shaking-hands-discussing-diplomatically-stock-photo-teens-model-un-shaking-hands-332712687.jpg" alt="Lessons">
+            <div class="card-text">Be Inspired</div>
+        </div>
+        <div class="card" onclick="navigateTo('activities.html')">
+            <img src="Youth-Camp.jpg" alt="Activities">
+            <div class="card-text">Activities</div>
+        </div>
+        <div class="card" onclick="navigateTo('events.html')">
+            <img src="6025d56721d4b8319e9c360f_60181f2a7490560d4ebda23a_vince-fleming-afrNpD1wKZU-unsplash.jpeg" alt="Events">
+            <div class="card-text">Events</div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 AP13 HQ JUNIOR CHURCH. All Rights Reserved.</p>
+    </footer>
+<script>
+    function closeAlert() {
+    const alertBox = document.getElementById('alertBox');
+    if (alertBox) {
+        alertBox.style.display = 'none';
+    }
+}
+</script>
+    <script src="script.js"></script>
+    <script src="navbar.js"></script>
+</body>
+</html>

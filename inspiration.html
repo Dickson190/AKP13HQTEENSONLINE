@@ -1,0 +1,133 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Be Inspired | AP13 HQ Junior Church</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      color: #333;
+    }.container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  animation: fadeInDown 1s ease-out;
+}
+
+p.lead {
+  font-size: 1.2em;
+  color: #444;
+  margin-bottom: 30px;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.inspo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.inspo-card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  animation: slideInUp 0.8s ease both;
+}
+
+.inspo-card:hover {
+  transform: translateY(-5px);
+}
+
+.inspo-icon {
+  font-size: 2.5em;
+  color: #f39c12;
+  margin-bottom: 15px;
+}
+
+.inspo-title {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.inspo-text {
+  font-size: 1em;
+  color: #555;
+}
+
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translateY(-30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Be Inspired</h1>
+    <p class="lead">Let your faith rise and your purpose shine. Find strength, joy, and direction through these powerful words and ideas.</p><div class="inspo-grid">
+  <div class="inspo-card">
+    <i class="fas fa-seedling inspo-icon"></i>
+    <div class="inspo-title">Grow in Faith</div>
+    <div class="inspo-text">Every great tree started as a small seed. Your faith may be small now, but nurture it, and it will grow into something unshakable.</div>
+  </div>
+
+  <div class="inspo-card">
+    <i class="fas fa-heart inspo-icon"></i>
+    <div class="inspo-title">Live with Love</div>
+    <div class="inspo-text">Let your actions reflect the love of Christ. Be the reason someone believes in God today.</div>
+  </div>
+
+  <div class="inspo-card">
+    <i class="fas fa-lightbulb inspo-icon"></i>
+    <div class="inspo-title">Shine Your Light</div>
+    <div class="inspo-text">Your light has power. Don’t hide your gifts—use them boldly to impact your world for the better.</div>
+  </div>
+
+  <div class="inspo-card">
+    <i class="fas fa-mountain inspo-icon"></i>
+    <div class="inspo-title">Overcome Challenges</div>
+    <div class="inspo-text">Every mountain is climbable with God by your side. You are more than a conqueror!</div>
+  </div>
+
+  <div class="inspo-card">
+    <i class="fas fa-praying-hands inspo-icon"></i>
+    <div class="inspo-title">Pray Always</div>
+    <div class="inspo-text">Prayer is not just communication—it's connection. Start and end your day with it.</div>
+  </div>
+
+  <div class="inspo-card">
+    <i class="fas fa-fire inspo-icon"></i>
+    <div class="inspo-title">Stay on Fire</div>
+    <div class="inspo-text">Keep the fire of God burning in your heart. Don’t let the world put out what God ignited.</div>
+  </div>
+</div>
+
+  </div>
+  <script src="navbar.js"></script>
+</body>
+</html>
